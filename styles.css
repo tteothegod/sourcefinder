@@ -1,0 +1,143 @@
+/* SourceFinder/styles.css */
+
+body {
+    font-family: sans-serif;
+}
+
+#TitleBar {
+    display: flex;
+    align-items: center;         
+    justify-content: center;     
+    background-color: burlywood;
+    width: 100%;
+    color: aliceblue;
+    /* margin-top: -15px;
+    margin-bottom: -15px; */
+}
+
+#TitleBar img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;         
+}
+
+#TitleLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;       
+    color: aliceblue;
+    font-size: 20px;          
+}
+
+#PageBody {
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*nMkzWfFRi9paflXR);
+}
+
+.BodyContent {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;    
+    justify-content: center;    
+    padding: 40px;
+}
+
+.Subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.LowestBar {
+    margin-bottom: -40px;
+}
+
+footer {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#resultSection {
+    align-items: center;
+    margin-top: 15px; /* space above the result box */
+    padding: 40px;
+    background-color: burlywood;
+    border-radius: 8px;
+    max-height: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.2s ease;
+}
+
+#resultSection.expand {
+    border: 100px;
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.dropContent {
+    overflow: hidden;
+    max-height: 0;
+    opacity: .5;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.dropContent.expand {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sectionHeader .Subtitle {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.sectionDropBtn {
+    font-size: 1.3em;
+    background: white;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.sectionDropBtn:hover {
+    transform: scale(1.2);
+}
+
+#sectionList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+

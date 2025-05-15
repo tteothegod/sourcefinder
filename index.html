@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Source Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="TitleBar">
+        <a id="TitleLink" href="./index.html">
+          <img
+            src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png"
+            alt="Wikipedia Logo"
+          />
+          <h1>SOURCE FINDER</h1>
+        </a>
+      </div>
+      <section id="PageBody">
+        <div class="BodyContent">
+          <ul id="sectionList">
+            <li>
+              <div class="sectionHeader">
+                <h2 class="Subtitle">How it Works</h2>
+                <button class="sectionDropBtn">></button>
+              </div>
+              <div class="dropContent">
+                <p>
+                  Source Finder works by sending html requests to google, parsing the
+                  html searching for a wikipedia page similar to that search. Then
+                  sending a http request to that wikipedia link and scalping that page
+                  for all its sources. All those sources are filtered searching for
+                  reputable databases, then the remaining sources are processed by a
+                  neural network i trained and deemed either credible or not
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="sectionHeader">
+                <h2 class="Subtitle">How to Use</h2>
+                <button class="sectionDropBtn">v</button>
+              </div>
+              <div class="dropContent expand">
+                <p>
+                  Enter a search term in the input box below and click "Search". The
+                  tool will find and classify Wikipedia sources based on credibility.
+                </p>
+              </div>
+            </li>
+
+          </p>
+          <hr />
+
+          <form id="searchForm">
+            <input
+              type="text"
+              id="queryInput"
+              placeholder="Search Wikipedia..."
+              required
+            />
+            <button id="querySubmitBtn" type="button" >Search</button>
+          </form>
+          <div id="error" class="error hidden"></div>
+          <!-- <hr class="LowestBar"> -->
+
+          <div id="resultSection" hidden>
+            <h2 class="Subtitle">Results</h2>
+            <div id="resultContainer">
+              <div id="resultList"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>No Copyright © 2025 Source Finder. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
