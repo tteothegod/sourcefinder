@@ -1,0 +1,66 @@
+:root {
+  --primary-color: burlywood;
+  --background-color: white;
+  --text-color: black;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: var(--primary-color);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color);
+}
+
+
+.App-header * {
+  background-color: var(--primary-color);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 5vmin);
+  text-decoration: none;
+  gap: 10px;
+
+  color: var(--background-color);
+}
+
+.App-main {
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*nMkzWfFRi9paflXR);
+  min-height: calc(100vh - 10vh);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  color: var(--text-color);
+  padding: 0; 
+}
+
+.App-body {
+  width: 60%; /* Set width to 60% of the page */
+  margin: 0 auto; /* Center the body horizontally */
+  background-color: white;
+  display: flex;
+  flex-direction: column;      
+  align-items: center;    
+  padding: 40px; /* Add padding inside the body */
+  flex-grow: 1; /* Allow it to expand and fill available space */
+}
+
+.App-link {
+  color: var(--primary-color);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,40 +1,70 @@
-# Source Finder
-**Link:** `https://github.com/tteothegod/godfiles/tree/1996094c81a6bf2ec20baaf76d2edb58b21321bb/SourceFinder`
+# Getting Started with Create React App
 
-## Overview
-**Source Finder** is a tool designed to help users quickly find and classify sources from Wikipedia. It scrapes and parses Wikipedia articles based on a search query and applies a neural network to determine whether each source is academically credible or not.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
-- **Web Scraping**: Uses Python and Beautiful Soup to scrape and parse Wikipedia's HTML for external sources.
-- **Neural Network Classification**: A trained neural network (implemented with Libtorch) analyzes sources to differentiate academic from non-academic references.
-- **Object-Oriented Design**: Implements OOP principles to create reusable classes for web scraping and HTML parsing.
-- **Dataset Creation**: Includes a growing dataset to improve the model's accuracy in classifying sources.
-- **Website Development**: Working towards integrating the tool into a functional website for broader accessibility.
+## Available Scripts
 
-## Technologies Used
-- **C++** (Libtorch for neural network training)
-- **Python** (Beautiful Soup for web scraping)
-- **HTML Parsing** (Extracting links and source data)
-- **Website Development** (In progress)
+In the project directory, you can run:
 
-## Installation & Usage
-### Prerequisites
-- Python 3.x
-- C++ Compiler (for Libtorch)
-- Beautiful Soup (`pip install beautifulsoup4`)
-- Libtorch (Follow installation guide: https://pytorch.org/cppdocs/installing.html)
+### `npm start`
 
-### Running the Project
-1. Clone the repository
-2. Set up dependencies (Python and C++ libraries as required).
-3. Compile the program: make DataPrep or make TrainModel (If needed use PYTORCH_LIB=/custom/path/to/libtorch/lib PYTORCH_INCLUDE=/custom/path/to/libtorch/include)
-4. Process and classify sources using the neural network.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Future Improvements
-- Expand and refine the training dataset for better classification accuracy.
-- Implement a web-based interface for easier user interaction.
-- Optimize scraping efficiency and error handling.
-- Improve model performance with additional deep learning techniques.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Author
-Matteo - University of California, Davis
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
