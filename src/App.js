@@ -33,6 +33,13 @@ function App() {
               tool will find and classify Wikipedia sources based on credibility.
             </p>
           </section>
+          <section>
+            <h2>Disclaimer</h2>
+            <p>
+              An API is currently being developed, so unfortunately the search function currently does not work. Stay tuned for updates!
+
+            </p>
+          </section>
           
           <form id="searchForm">
             <input
